@@ -1,0 +1,166 @@
+/* ==========================================================================
+   AutoPick (오토픽) 티스토리 모바일 최적화 표준 마크다운 스타일시트
+   - 티스토리 관리자 [스킨 편집] > [html 편집] > [CSS] 탭 맨 아래에 추가하세요.
+   - 순수 마크다운(Markdown)으로 작성된 글을 자동으로 고급 자동차 매거진처럼 스타일링합니다.
+   - 대상: Poster, Book Club, Odyssey 등 모든 티스토리 기본 스킨 호환
+   ========================================================================== */
+
+/* 1. 마크다운 본문 기본 가독성 및 모바일 레이아웃 */
+.entry-content,
+.article-view,
+.tt_article_useless_p_margin,
+.post-content {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif !important;
+  color: #24292f !important;
+  font-size: 16px !important;
+  line-height: 1.85 !important;
+  letter-spacing: -0.3px !important;
+  word-break: keep-all !important;
+}
+
+/* 2. 대제목 및 소제목 (H2, H3, H4) */
+.entry-content h2,
+.article-view h2,
+.tt_article_useless_p_margin h2 {
+  font-size: 21px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  margin: 44px 0 18px 0 !important;
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+  line-height: 1.4 !important;
+}
+
+.entry-content h3,
+.article-view h3,
+.tt_article_useless_p_margin h3 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  margin: 30px 0 12px 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* 3. 인용구 (Blockquote) - 3초 요약 및 핵심 인사이트 카드 */
+.entry-content blockquote,
+.article-view blockquote,
+.tt_article_useless_p_margin blockquote {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+  border: 1px solid #e2e8f0 !important;
+  border-left: 5px solid #2563eb !important;
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  margin: 24px 0 !important;
+  color: #334155 !important;
+  font-size: 15px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.entry-content blockquote p,
+.article-view blockquote p,
+.tt_article_useless_p_margin blockquote p {
+  margin: 0 0 8px 0 !important;
+  line-height: 1.7 !important;
+}
+.entry-content blockquote p:last-child,
+.article-view blockquote p:last-child,
+.tt_article_useless_p_margin blockquote p:last-child {
+  margin: 0 !important;
+}
+
+/* 4. 마크다운 테이블 (모바일 스크롤 & 실측 데이터 표) */
+.entry-content table,
+.article-view table,
+.tt_article_useless_p_margin table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 24px 0 !important;
+  font-size: 14px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.entry-content th,
+.article-view th,
+.tt_article_useless_p_margin th {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  padding: 12px 10px !important;
+  border: 1px solid #1e293b !important;
+}
+
+.entry-content td,
+.article-view td,
+.tt_article_useless_p_margin td {
+  padding: 11px 12px !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #334155 !important;
+  background-color: #ffffff !important;
+}
+
+.entry-content tr:nth-child(even) td,
+.article-view tr:nth-child(even) td,
+.tt_article_useless_p_margin tr:nth-child(even) td {
+  background-color: #f8fafc !important;
+}
+
+/* 5. 리스트 (UL, OL) 가독성 */
+.entry-content ul,
+.article-view ul,
+.tt_article_useless_p_margin ul {
+  padding-left: 22px !important;
+  margin: 14px 0 20px 0 !important;
+}
+
+.entry-content li,
+.article-view li,
+.tt_article_useless_p_margin li {
+  margin-bottom: 8px !important;
+  line-height: 1.75 !important;
+  color: #334155 !important;
+}
+
+/* 6. 구분선 (HR) */
+.entry-content hr,
+.article-view hr,
+.tt_article_useless_p_margin hr {
+  border: none !important;
+  height: 1px !important;
+  background-color: #e2e8f0 !important;
+  margin: 40px 0 !important;
+}
+
+/* 7. 사진 캡션 및 인라인 코드 태그 */
+.entry-content code,
+.article-view code,
+.tt_article_useless_p_margin code {
+  background-color: #f1f5f9 !important;
+  color: #0284c7 !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 13.5px !important;
+  font-family: inherit !important;
+}
+
+/* 8. 모바일 화면 최적화 (가로 스크롤 방지 & 패딩 조절) */
+@media (max-width: 640px) {
+  .entry-content,
+  .article-view,
+  .tt_article_useless_p_margin {
+    font-size: 15px !important;
+  }
+  .entry-content h2,
+  .article-view h2 {
+    font-size: 19px !important;
+  }
+  .entry-content table,
+  .article-view table {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+}
